@@ -13,6 +13,10 @@ class Persona
     def get_idioma 
         @idioma
     end
+
+    def get_aula
+        "Aula 1"
+    end
 end
 
 class Profe < Persona
@@ -43,9 +47,18 @@ class Alumno < Persona
 
         @@alumnos_alta << self
     end
+
+    def get_aula
+        "Aula 2"
+        super # Hace referencia al metodo de la clase padre
+    end
 end
 
 david = Profe.new("David", "Pique", "david@david.com")
 puts david.inspect
 david.set_idioma("Castellano, Ingles, Portugues")
 puts david.get_idioma
+
+pablo = Alumno.new("Ruby", "pablo@pablo.com", "Pablo")
+puts pablo.nombre
+puts pablo.get_aula
