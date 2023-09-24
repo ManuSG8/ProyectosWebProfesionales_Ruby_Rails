@@ -1,0 +1,16 @@
+<% provide(:titulo, "Nosotros") %>
+
+<h1>Estaticas#nosotros</h1>
+<p>Find me in app/views/estaticas/nosotros.html.erb</p>
+
+<%= "El controller dice: #{@mensaje}" %>
+
+<ul>
+    <% @usuarios.each do |usuario| %>
+        <li><%= usuario %></li>
+    <% end %>
+</ul>
+
+<%= link_to "Home", root_path %>
+<%= link_to "Contacto", estaticas_contacto_path %>
+

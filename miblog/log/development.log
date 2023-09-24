@@ -14,3 +14,690 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 8ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 2508)
 
 
+Started GET "/" for ::1 at 2023-09-24 17:09:44 +0200
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/manuel/.asdf/installs/ruby/2.7.5/lib/ruby/gems/2.7.0/gems/railties-6.0.6.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/manuel/.asdf/installs/ruby/2.7.5/lib/ruby/gems/2.7.0/gems/railties-6.0.6.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.3ms | Allocations: 297)
+Completed 200 OK in 6ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 2552)
+
+
+Started GET "/home" for ::1 at 2023-09-24 17:09:48 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.7) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/home/index" for ::1 at 2023-09-24 17:10:02 +0200
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 79)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/manuel/Escritorio/ProyectosWebProfesionales_Ruby_Rails/miblog/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-transform-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-transform-class-properties.
+The "loose" option must be the same for @babel/plugin-transform-class-properties, @babel/plugin-transform-private-methods and @babel/plugin-transform-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-transform-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-transform-private-methods since the "loose" mode option was set to "true" for @babel/plugin-transform-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-transform-class-properties, @babel/plugin-transform-private-methods and @babel/plugin-transform-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-transform-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-transform-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-transform-class-properties.
+The "loose" option must be the same for @babel/plugin-transform-class-properties, @babel/plugin-transform-private-methods and @babel/plugin-transform-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-transform-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-transform-private-methods since the "loose" mode option was set to "true" for @babel/plugin-transform-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-transform-class-properties, @babel/plugin-transform-private-methods and @babel/plugin-transform-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-transform-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: 666b4b17c239d77fe3e2
+Version: webpack 4.47.0
+Time: 609ms
+Built at: 24/09/2023 17:10:03
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-82550c4e3b8b39cde23f.js    120 KiB  application  [emitted] [immutable]  application
+js/application-82550c4e3b8b39cde23f.js.map    133 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-82550c4e3b8b39cde23f.js js/application-82550c4e3b8b39cde23f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 748 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 1269ms (Views: 1268.5ms | ActiveRecord: 0.0ms | Allocations: 18209)
+
+
+Started GET "/home/index" for ::1 at 2023-09-24 17:10:07 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 3345)
+
+
+Started GET "/home/index" for ::1 at 2023-09-24 17:10:39 +0200
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/home" for ::1 at 2023-09-24 17:10:42 +0200
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.7) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/home" for ::1 at 2023-09-24 17:11:01 +0200
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 74)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 4376)
+
+
+Started GET "/home" for ::1 at 2023-09-24 17:12:04 +0200
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:3:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for ::1 at 2023-09-24 17:12:05 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.7) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2023-09-24 17:12:14 +0200
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:3:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for ::1 at 2023-09-24 17:12:51 +0200
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 3522)
+
+
+Started GET "/estaticas/nosotro" for ::1 at 2023-09-24 17:15:55 +0200
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/estaticas/nosotro"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.7) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/estaticas/nosotros" for ::1 at 2023-09-24 17:15:57 +0200
+Processing by EstaticasController#nosotros as HTML
+  Rendering estaticas/nosotros.html.erb within layouts/application
+  Rendered estaticas/nosotros.html.erb within layouts/application (Duration: 0.5ms | Allocations: 75)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 12419)
+
+
+Started GET "/estaticas/nosotros" for ::1 at 2023-09-24 17:20:33 +0200
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by EstaticasController#nosotros as HTML
+  Rendering estaticas/nosotros.html.erb within layouts/application
+  Rendered estaticas/nosotros.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 4551)
+
+
+Started GET "/estaticas/nosotros" for ::1 at 2023-09-24 17:21:22 +0200
+Processing by EstaticasController#nosotros as HTML
+  Rendering estaticas/nosotros.html.erb within layouts/application
+  Rendered estaticas/nosotros.html.erb within layouts/application (Duration: 1.4ms | Allocations: 280)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 0.0ms | Allocations: 4697)
+
+
+Started GET "/" for ::1 at 2023-09-24 17:21:24 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 74)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 4067)
+
+
+Started GET "/estaticas/contacto" for ::1 at 2023-09-24 17:21:25 +0200
+Processing by EstaticasController#contacto as HTML
+  Rendering estaticas/contacto.html.erb within layouts/application
+  Rendered estaticas/contacto.html.erb within layouts/application (Duration: 0.2ms | Allocations: 75)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 3674)
+
+
+Started GET "/" for ::1 at 2023-09-24 17:21:27 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 3469)
+
+
+Started GET "/estaticas/contacto" for ::1 at 2023-09-24 17:24:53 +0200
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by EstaticasController#contacto as HTML
+  Rendering estaticas/contacto.html.erb within layouts/application
+  Rendered estaticas/contacto.html.erb within layouts/application (Duration: 0.2ms | Allocations: 112)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 4489)
+
+
+Started GET "/estaticas/contacto?id=123&pag=39223" for ::1 at 2023-09-24 17:25:05 +0200
+Processing by EstaticasController#contacto as HTML
+  Parameters: {"id"=>"123", "pag"=>"39223"}
+  Rendering estaticas/contacto.html.erb within layouts/application
+  Rendered estaticas/contacto.html.erb within layouts/application (Duration: 0.1ms | Allocations: 6)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 3483)
+
+
+Started GET "/estaticas/contacto?id=123&pag=39223" for ::1 at 2023-09-24 17:27:35 +0200
+Processing by EstaticasController#contacto as HTML
+  Parameters: {"id"=>"123", "pag"=>"39223"}
+  Rendering estaticas/contacto.html.erb within layouts/application
+  Rendered estaticas/contacto.html.erb within layouts/application (Duration: 0.2ms | Allocations: 108)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 228)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 4968)
+
+
+Started GET "/" for ::1 at 2023-09-24 17:27:37 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 72)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 111)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 4237)
+
+
+Started GET "/estaticas/contacto" for ::1 at 2023-09-24 17:27:37 +0200
+Processing by EstaticasController#contacto as HTML
+  Rendering estaticas/contacto.html.erb within layouts/application
+  Rendered estaticas/contacto.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 110)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 3655)
+
+
+Started GET "/estaticas/nosotros" for ::1 at 2023-09-24 17:27:38 +0200
+Processing by EstaticasController#nosotros as HTML
+  Rendering estaticas/nosotros.html.erb within layouts/application
+  Rendered estaticas/nosotros.html.erb within layouts/application (Duration: 0.3ms | Allocations: 267)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 95)
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 4037)
+
+
+Started GET "/estaticas/contacto" for ::1 at 2023-09-24 17:27:38 +0200
+Processing by EstaticasController#contacto as HTML
+  Rendering estaticas/contacto.html.erb within layouts/application
+  Rendered estaticas/contacto.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 103)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 3642)
+
+
+Started GET "/" for ::1 at 2023-09-24 17:27:39 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 110)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 3635)
+
+
+Started GET "/" for ::1 at 2023-09-24 17:29:31 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 72)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.6ms | Allocations: 223)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.0ms | Allocations: 4911)
+
+
+Started GET "/estaticas/contacto" for ::1 at 2023-09-24 17:29:33 +0200
+Processing by EstaticasController#contacto as HTML
+  Rendering estaticas/contacto.html.erb within layouts/application
+  Rendered estaticas/contacto.html.erb within layouts/application (Duration: 0.2ms | Allocations: 122)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 110)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 4361)
+
+
+Started GET "/estaticas/contacto" for ::1 at 2023-09-24 17:30:07 +0200
+Processing by EstaticasController#contacto as HTML
+  Rendering estaticas/contacto.html.erb within layouts/application
+  Rendered estaticas/contacto.html.erb within layouts/application (Duration: 0.2ms | Allocations: 120)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.8ms | Allocations: 223)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 4977)
+
+
+Started GET "/estaticas/nosotros" for ::1 at 2023-09-24 17:30:08 +0200
+Processing by EstaticasController#nosotros as HTML
+  Rendering estaticas/nosotros.html.erb within layouts/application
+  Rendered estaticas/nosotros.html.erb within layouts/application (Duration: 0.5ms | Allocations: 282)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 95)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 4042)
+
+
+Started GET "/" for ::1 at 2023-09-24 17:30:09 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 94)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 110)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 4311)
+
+
+Started GET "/estaticas/contacto" for ::1 at 2023-09-24 17:30:09 +0200
+Processing by EstaticasController#contacto as HTML
+  Rendering estaticas/contacto.html.erb within layouts/application
+  Rendered estaticas/contacto.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 110)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 3666)
+
+
+Started GET "/estaticas/nosotros" for ::1 at 2023-09-24 17:30:10 +0200
+Processing by EstaticasController#nosotros as HTML
+  Rendering estaticas/nosotros.html.erb within layouts/application
+  Rendered estaticas/nosotros.html.erb within layouts/application (Duration: 0.1ms | Allocations: 82)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 94)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 3705)
+
+
+Started GET "/estaticas/contacto" for ::1 at 2023-09-24 17:30:10 +0200
+Processing by EstaticasController#contacto as HTML
+  Rendering estaticas/contacto.html.erb within layouts/application
+  Rendered estaticas/contacto.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 103)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 3653)
+
+
+Started GET "/estaticas/contacto" for ::1 at 2023-09-24 18:16:11 +0200
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by EstaticasController#contacto as HTML
+  Rendering estaticas/contacto.html.erb within layouts/application
+  Rendered estaticas/contacto.html.erb within layouts/application (Duration: 0.3ms | Allocations: 242)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/manuel/Escritorio/ProyectosWebProfesionales_Ruby_Rails/miblog/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-transform-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-transform-class-properties.
+The "loose" option must be the same for @babel/plugin-transform-class-properties, @babel/plugin-transform-private-methods and @babel/plugin-transform-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-transform-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-transform-private-methods since the "loose" mode option was set to "true" for @babel/plugin-transform-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-transform-class-properties, @babel/plugin-transform-private-methods and @babel/plugin-transform-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-transform-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: f218724a5e902b104217
+Version: webpack 4.47.0
+Time: 665ms
+Built at: 24/09/2023 18:16:13
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-10ed156205880d660729.js    133 KiB  application  [emitted] [immutable]  application
+js/application-10ed156205880d660729.js.map    146 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-10ed156205880d660729.js js/application-10ed156205880d660729.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 782 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss 315 bytes {application} [built]
+    + 5 hidden modules
+
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 245)
+Completed 200 OK in 1236ms (Views: 1233.6ms | ActiveRecord: 0.0ms | Allocations: 13964)
+
+
+Started GET "/estaticas/contacto" for ::1 at 2023-09-24 18:16:22 +0200
+Processing by EstaticasController#contacto as HTML
+  Rendering estaticas/contacto.html.erb within layouts/application
+  Rendered estaticas/contacto.html.erb within layouts/application (Duration: 0.0ms | Allocations: 8)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 103)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 3676)
+
+
+Started GET "/estaticas/contacto" for ::1 at 2023-09-24 18:16:23 +0200
+Processing by EstaticasController#contacto as HTML
+  Rendering estaticas/contacto.html.erb within layouts/application
+  Rendered estaticas/contacto.html.erb within layouts/application (Duration: 0.0ms | Allocations: 8)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 103)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 3666)
+
+
+Started GET "/estaticas/contacto" for ::1 at 2023-09-24 18:16:42 +0200
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by EstaticasController#contacto as HTML
+  Rendering estaticas/contacto.html.erb within layouts/application
+  Rendered estaticas/contacto.html.erb within layouts/application (Duration: 0.3ms | Allocations: 242)
+[Webpacker] Compiling...
+Started GET "/estaticas/contacto" for ::1 at 2023-09-24 18:16:43 +0200
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by EstaticasController#contacto as HTML
+  Rendering estaticas/contacto.html.erb within layouts/application
+  Rendered estaticas/contacto.html.erb within layouts/application (Duration: 0.0ms | Allocations: 8)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/manuel/Escritorio/ProyectosWebProfesionales_Ruby_Rails/miblog/public/packs
+[Webpacker] Hash: 837ec3049de2515c17c6
+Version: webpack 4.47.0
+Time: 551ms
+Built at: 24/09/2023 18:16:43
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-9199516cb51dd180a616.js    133 KiB  application  [emitted] [immutable]  application
+js/application-9199516cb51dd180a616.js.map    146 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-9199516cb51dd180a616.js js/application-9199516cb51dd180a616.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 782 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss 599 bytes {application} [built]
+    + 5 hidden modules
+
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 245)
+Completed 200 OK in 1114ms (Views: 1111.4ms | ActiveRecord: 0.0ms | Allocations: 15485)
+
+
+[Webpacker] Compiled all packs in /home/manuel/Escritorio/ProyectosWebProfesionales_Ruby_Rails/miblog/public/packs
+[Webpacker] Hash: 837ec3049de2515c17c6
+Version: webpack 4.47.0
+Time: 529ms
+Built at: 24/09/2023 18:16:44
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-9199516cb51dd180a616.js    133 KiB  application  [emitted] [immutable]  application
+js/application-9199516cb51dd180a616.js.map    146 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-9199516cb51dd180a616.js js/application-9199516cb51dd180a616.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 782 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss 599 bytes {application} [built]
+    + 5 hidden modules
+
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 103)
+Completed 200 OK in 1094ms (Views: 1093.5ms | ActiveRecord: 0.0ms | Allocations: 7439)
+
+
+Started GET "/estaticas/contacto" for ::1 at 2023-09-24 18:17:17 +0200
+Processing by EstaticasController#contacto as HTML
+  Rendering estaticas/contacto.html.erb within layouts/application
+  Rendered estaticas/contacto.html.erb within layouts/application (Duration: 0.9ms | Allocations: 124)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/manuel/Escritorio/ProyectosWebProfesionales_Ruby_Rails/miblog/public/packs
+[Webpacker] Hash: f218724a5e902b104217
+Version: webpack 4.47.0
+Time: 519ms
+Built at: 24/09/2023 18:17:18
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-10ed156205880d660729.js    133 KiB  application  [emitted] [immutable]  application
+js/application-10ed156205880d660729.js.map    146 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-10ed156205880d660729.js js/application-10ed156205880d660729.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 782 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss 315 bytes {application} [built]
+    + 5 hidden modules
+
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 223)
+Completed 200 OK in 1081ms (Views: 1079.3ms | ActiveRecord: 0.0ms | Allocations: 6296)
+
+
+Started GET "/" for ::1 at 2023-09-24 18:17:21 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 93)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 111)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 4298)
+
+
+Started GET "/" for ::1 at 2023-09-24 18:17:37 +0200
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 211)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/manuel/Escritorio/ProyectosWebProfesionales_Ruby_Rails/miblog/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-transform-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-transform-class-properties.
+The "loose" option must be the same for @babel/plugin-transform-class-properties, @babel/plugin-transform-private-methods and @babel/plugin-transform-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-transform-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-transform-private-methods since the "loose" mode option was set to "true" for @babel/plugin-transform-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-transform-class-properties, @babel/plugin-transform-private-methods and @babel/plugin-transform-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-transform-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: 5cb3322a1506a8f74e9d
+Version: webpack 4.47.0
+Time: 1151ms
+Built at: 24/09/2023 18:17:39
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-4be58d45cb036304894f.js    422 KiB  application  [emitted] [immutable]  application
+js/application-4be58d45cb036304894f.js.map    396 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-4be58d45cb036304894f.js js/application-4be58d45cb036304894f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 802 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss 315 bytes {application} [built]
+    + 63 hidden modules
+
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 246)
+Completed 200 OK in 1708ms (Views: 1705.5ms | ActiveRecord: 0.0ms | Allocations: 10615)
+
+
+Started GET "/" for ::1 at 2023-09-24 18:17:58 +0200
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 211)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 246)
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 9015)
+
+
+Started GET "/" for ::1 at 2023-09-24 18:18:59 +0200
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 211)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/manuel/Escritorio/ProyectosWebProfesionales_Ruby_Rails/miblog/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-transform-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-transform-class-properties.
+The "loose" option must be the same for @babel/plugin-transform-class-properties, @babel/plugin-transform-private-methods and @babel/plugin-transform-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-transform-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-transform-private-methods since the "loose" mode option was set to "true" for @babel/plugin-transform-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-transform-class-properties, @babel/plugin-transform-private-methods and @babel/plugin-transform-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-transform-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: 7667744294ccffc8b499
+Version: webpack 4.47.0
+Time: 1495ms
+Built at: 24/09/2023 18:19:01
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-a94e10b090dd4f0a49a6.js   1.36 MiB  application  [emitted] [immutable]  application
+js/application-a94e10b090dd4f0a49a6.js.map   1.36 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-a94e10b090dd4f0a49a6.js js/application-a94e10b090dd4f0a49a6.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 859 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss 315 bytes {application} [built]
+    + 65 hidden modules
+
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 246)
+Completed 200 OK in 2070ms (Views: 2066.7ms | ActiveRecord: 0.0ms | Allocations: 10303)
+
+
+Started GET "/estaticas/contacto" for ::1 at 2023-09-24 18:19:04 +0200
+Processing by EstaticasController#contacto as HTML
+  Rendering estaticas/contacto.html.erb within layouts/application
+  Rendered estaticas/contacto.html.erb within layouts/application (Duration: 0.2ms | Allocations: 123)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 111)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 4392)
+
+
+Started GET "/estaticas/nosotros" for ::1 at 2023-09-24 18:19:04 +0200
+Processing by EstaticasController#nosotros as HTML
+  Rendering estaticas/nosotros.html.erb within layouts/application
+  Rendered estaticas/nosotros.html.erb within layouts/application (Duration: 0.3ms | Allocations: 291)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 95)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 4096)
+
+
+Started GET "/estaticas/contacto" for ::1 at 2023-09-24 18:19:05 +0200
+Processing by EstaticasController#contacto as HTML
+  Rendering estaticas/contacto.html.erb within layouts/application
+  Rendered estaticas/contacto.html.erb within layouts/application (Duration: 0.0ms | Allocations: 8)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 103)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 3693)
+
+
+Started GET "/" for ::1 at 2023-09-24 18:19:05 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 8)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 110)
+Completed 200 OK in 2ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 3674)
+
+
