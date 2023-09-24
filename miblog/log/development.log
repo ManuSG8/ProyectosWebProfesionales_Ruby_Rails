@@ -701,3 +701,144 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 2ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 3674)
 
 
+Started GET "/articulos/index" for ::1 at 2023-09-24 19:32:43 +0200
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  Rendered articulos/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 190)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 246)
+Completed 200 OK in 17ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 22461)
+
+
+Started GET "/estaticas/contacto" for ::1 at 2023-09-24 19:32:46 +0200
+Processing by EstaticasController#contacto as HTML
+  Rendering estaticas/contacto.html.erb within layouts/application
+  Rendered estaticas/contacto.html.erb within layouts/application (Duration: 0.2ms | Allocations: 127)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 111)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 4454)
+
+
+Started GET "/" for ::1 at 2023-09-24 19:32:47 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 93)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 111)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 4390)
+
+
+Started GET "/estaticas/contacto" for ::1 at 2023-09-24 19:32:47 +0200
+Processing by EstaticasController#contacto as HTML
+  Rendering estaticas/contacto.html.erb within layouts/application
+  Rendered estaticas/contacto.html.erb within layouts/application (Duration: 0.0ms | Allocations: 8)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 110)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 3732)
+
+
+Started GET "/estaticas/nosotros" for ::1 at 2023-09-24 19:32:49 +0200
+Processing by EstaticasController#nosotros as HTML
+  Rendering estaticas/nosotros.html.erb within layouts/application
+  Rendered estaticas/nosotros.html.erb within layouts/application (Duration: 0.5ms | Allocations: 291)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 95)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 4145)
+
+
+Started GET "/estaticas/contacto" for ::1 at 2023-09-24 19:32:49 +0200
+Processing by EstaticasController#contacto as HTML
+  Rendering estaticas/contacto.html.erb within layouts/application
+  Rendered estaticas/contacto.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 103)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 3727)
+
+
+Started GET "/" for ::1 at 2023-09-24 19:32:50 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 110)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 3704)
+
+
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from load at /home/manuel/.asdf/installs/ruby/2.7.5/bin/rake:23)
+Started GET "/" for ::1 at 2023-09-24 19:33:53 +0200
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  Rendered articulos/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 113)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 3849)
+
+
+Started GET "/" for ::1 at 2023-09-24 19:33:57 +0200
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  Rendered articulos/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 103)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 3703)
+
+
+Started GET "/" for ::1 at 2023-09-24 19:33:58 +0200
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  Rendered articulos/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 103)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 3696)
+
+
+Started GET "/" for ::1 at 2023-09-24 19:33:58 +0200
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  Rendered articulos/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 103)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 3707)
+
+
+Started GET "/" for ::1 at 2023-09-24 19:33:58 +0200
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  Rendered articulos/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 103)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 3703)
+
+
+Started GET "/" for ::1 at 2023-09-24 19:33:58 +0200
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  Rendered articulos/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 103)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 3703)
+
+
+Started GET "/" for ::1 at 2023-09-24 19:34:04 +0200
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 113)
+Completed 200 OK in 2ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 3884)
+
+
+Started GET "/articulos/index" for ::1 at 2023-09-24 19:38:05 +0200
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  Rendered articulos/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 78)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 226)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 5008)
+
+
