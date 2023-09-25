@@ -1,2 +1,21 @@
-<h1>Articulos#new</h1>
-<p>Find me in app/views/articulos/new.html.erb</p>
+<h1>Crear Articulo</h1>
+<%= form_with model: @articulo, local: true do |f| %>
+    <div>
+        <%= f.label :titulo %>
+        <%= f.text_field :titulo %>
+    </div>
+
+    <div>
+        <%= f.label :contenido %>
+        <%= f.text_area :contenido %>
+    </div>
+
+    <div>
+        <%= f.label :autor_id %>
+        <%= f.number_field :autor_id %>
+    </div>
+
+    <div>
+        <%= f.submit "Crear Articulo" %>
+    </div>
+<% end %>
