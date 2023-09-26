@@ -3779,3 +3779,845 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 13ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 7301)
 
 
+Started GET "/autors/sign_up" for ::1 at 2023-09-26 20:12:04 +0200
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 196)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 522)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 5318)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 220)
+Completed 200 OK in 19ms (Views: 12.5ms | ActiveRecord: 0.3ms | Allocations: 21220)
+
+
+Started POST "/autors" for ::1 at 2023-09-26 20:12:14 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"Ia+7qU4qX/mKt3xAHnYjz9courkbyZPKlwIhW4pqWlTJtOrnENxx5vB/pAaYGPF0ffTr7hnGRWWLEEZSVm2Tlg==", "autor"=>{"email"=>"manu@manu.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAutor Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "autors" WHERE "autors"."email" = ? LIMIT ?[0m  [["email", "manu@manu.com"], ["LIMIT", 1]]
+  [1m[36mAutor Create (0.1ms)[0m  [1m[32mINSERT INTO "autors" ("email", "created_at", "updated_at", "encrypted_password") VALUES (?, ?, ?, ?)[0m  [["email", "manu@manu.com"], ["created_at", "2023-09-26 18:12:14.922535"], ["updated_at", "2023-09-26 18:12:14.922535"], ["encrypted_password", "$2a$12$PaGBisxKyXMMarc4QFlBqu40f5R4KzAhMwRjqIGCO5pzMy78EZmWS"]]
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 303 See Other in 165ms (ActiveRecord: 2.9ms | Allocations: 12685)
+
+
+Started GET "/" for ::1 at 2023-09-26 20:12:14 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 94)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 111)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 4709)
+
+
+Started GET "/autors/edit" for ::1 at 2023-09-26 20:13:13 +0200
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mAutor Load (0.2ms)[0m  [1m[34mSELECT "autors".* FROM "autors" WHERE "autors"."id" = ? ORDER BY "autors"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2275)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 99)
+Completed 200 OK in 10ms (Views: 6.6ms | ActiveRecord: 0.2ms | Allocations: 7899)
+
+
+Started GET "/autors/edit" for ::1 at 2023-09-26 20:14:29 +0200
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mAutor Load (0.2ms)[0m  [1m[34mSELECT "autors".* FROM "autors" WHERE "autors"."id" = ? ORDER BY "autors"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 187)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 4.1ms | Allocations: 2527)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 402)
+Completed 200 OK in 16ms (Views: 11.3ms | ActiveRecord: 0.2ms | Allocations: 9821)
+
+
+Started GET "/autors/edit" for ::1 at 2023-09-26 20:14:34 +0200
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mAutor Load (0.1ms)[0m  [1m[34mSELECT "autors".* FROM "autors" WHERE "autors"."id" = ? ORDER BY "autors"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1797)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 213)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.1ms | Allocations: 7270)
+
+
+Started GET "/autors/sign_up" for ::1 at 2023-09-26 20:14:34 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mAutor Load (0.1ms)[0m  [1m[34mSELECT "autors".* FROM "autors" WHERE "autors"."id" = ? ORDER BY "autors"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 1813)
+
+
+Started GET "/" for ::1 at 2023-09-26 20:14:34 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 234)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 4789)
+
+
+Started GET "/autors/sign_in" for ::1 at 2023-09-26 20:14:36 +0200
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mAutor Load (0.1ms)[0m  [1m[34mSELECT "autors".* FROM "autors" WHERE "autors"."id" = ? ORDER BY "autors"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms | Allocations: 1895)
+
+
+Started GET "/" for ::1 at 2023-09-26 20:14:36 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 223)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 4029)
+
+
+Started GET "/autors/sign_out" for ::1 at 2023-09-26 20:14:37 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/autors/sign_out"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.7) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/autors/sign_out" for ::1 at 2023-09-26 20:14:54 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/autors/sign_out"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.7) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/articulos" for ::1 at 2023-09-26 20:15:00 +0200
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (0.3ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY created_at DESC[0m
+  ↳ app/views/articulos/index.html.erb:3
+  Rendered articulos/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 4471)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 423)
+Completed 200 OK in 18ms (Views: 12.9ms | ActiveRecord: 0.9ms | Allocations: 11611)
+
+
+Started GET "/autors/sign_out" for ::1 at 2023-09-26 20:15:01 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/autors/sign_out"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.7) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/autors/sign_out" for ::1 at 2023-09-26 20:15:13 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/autors/sign_out"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.7) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/autors/sign_in" for ::1 at 2023-09-26 20:15:19 +0200
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mAutor Load (0.1ms)[0m  [1m[34mSELECT "autors".* FROM "autors" WHERE "autors"."id" = ? ORDER BY "autors"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 1823)
+
+
+Started GET "/" for ::1 at 2023-09-26 20:15:19 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 430)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 5612)
+
+
+Started DELETE "/autors/sign_out" for ::1 at 2023-09-26 20:15:20 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qRlTcZlhpknXY/toZwA4Mn7ECEIHppbTnzawDr/lDgNBAgI/x5eIVq2rIy7hbuqJ1BhZFQWpQHyDJNcHY+LHwQ=="}
+  [1m[36mAutor Load (0.1ms)[0m  [1m[34mSELECT "autors".* FROM "autors" WHERE "autors"."id" = ? ORDER BY "autors"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 6ms (ActiveRecord: 0.1ms | Allocations: 4419)
+
+
+Started GET "/" for ::1 at 2023-09-26 20:15:20 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 248)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 4001)
+
+
+Started GET "/autors/sign_in" for ::1 at 2023-09-26 20:15:22 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 608)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2462)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 248)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 7762)
+
+
+Started POST "/autors/sign_in" for ::1 at 2023-09-26 20:15:39 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"BIji9Wyvyn4fhvmsiCG8GN73s0PZjMLEu30D1topvGk+m9ESMBDfHUg1W2sLN5InRFKiundqiT+7Yv/HW37+5w==", "autor"=>{"email"=>"manu@manu.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAutor Load (0.2ms)[0m  [1m[34mSELECT "autors".* FROM "autors" WHERE "autors"."email" = ? ORDER BY "autors"."id" ASC LIMIT ?[0m  [["email", "manu@manu.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 165ms (ActiveRecord: 0.2ms | Allocations: 4073)
+
+
+Started GET "/" for ::1 at 2023-09-26 20:15:39 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 259)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 4012)
+
+
+Started GET "/autors/sign_in" for ::1 at 2023-09-26 20:19:14 +0200
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mAutor Load (0.1ms)[0m  [1m[34mSELECT "autors".* FROM "autors" WHERE "autors"."id" = ? ORDER BY "autors"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms | Allocations: 6920)
+
+
+Started GET "/" for ::1 at 2023-09-26 20:19:14 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 95)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 437)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 5624)
+
+
+Started GET "/articulos" for ::1 at 2023-09-26 20:19:19 +0200
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (0.1ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY created_at DESC[0m
+  ↳ app/views/articulos/index.html.erb:3
+  Rendered articulos/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 4264)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 246)
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.3ms | Allocations: 9910)
+
+
+Started GET "/articulos/new" for ::1 at 2023-09-26 20:19:23 +0200
+Processing by ArticulosController#new as HTML
+  [1m[36mAutor Load (0.1ms)[0m  [1m[34mSELECT "autors".* FROM "autors" WHERE "autors"."id" = ? ORDER BY "autors"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:8:in `new'
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/_form.html.erb (Duration: 1.6ms | Allocations: 1558)
+  Rendered articulos/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1850)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 246)
+Completed 200 OK in 9ms (Views: 5.2ms | ActiveRecord: 0.1ms | Allocations: 9528)
+
+
+Started GET "/articulos/new" for ::1 at 2023-09-26 20:19:48 +0200
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArticulosController#new as HTML
+  [1m[36mAutor Load (0.1ms)[0m  [1m[34mSELECT "autors".* FROM "autors" WHERE "autors"."id" = ? ORDER BY "autors"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:8:in `new'
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/_form.html.erb (Duration: 0.8ms | Allocations: 1063)
+  Rendered articulos/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1356)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 426)
+Completed 200 OK in 15ms (Views: 4.4ms | ActiveRecord: 0.6ms | Allocations: 17604)
+
+
+Started POST "/articulos" for ::1 at 2023-09-26 20:19:58 +0200
+Processing by ArticulosController#create as HTML
+  Parameters: {"authenticity_token"=>"bVC60bPC1207Xfe0ix6cb4KH6He3mWeIDFNQ5DHhyyRrN3KGgK7yOCYznaRh6j0A22aR06bTJn497bZIT1tGZQ==", "articulo"=>{"titulo"=>"Proba", "contenido"=>"Texto de proba para ver si funciona"}, "commit"=>"Crear Articulo"}
+  [1m[36mAutor Load (0.2ms)[0m  [1m[34mSELECT "autors".* FROM "autors" WHERE "autors"."id" = ? ORDER BY "autors"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:12:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articulos_controller.rb:13:in `create'
+  [1m[36mArticulo Create (0.6ms)[0m  [1m[32mINSERT INTO "articulos" ("titulo", "contenido", "autor_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["titulo", "Proba"], ["contenido", "Texto de proba para ver si funciona"], ["autor_id", 2], ["created_at", "2023-09-26 18:19:58.293047"], ["updated_at", "2023-09-26 18:19:58.293047"]]
+  ↳ app/controllers/articulos_controller.rb:13:in `create'
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articulos_controller.rb:13:in `create'
+Redirected to http://localhost:3000/articulos/5
+Completed 302 Found in 14ms (ActiveRecord: 3.5ms | Allocations: 6114)
+
+
+Started GET "/articulos/5" for ::1 at 2023-09-26 20:19:58 +0200
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mArticulo Load (0.1ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:37:in `show'
+  Rendering articulos/show.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comentarios" WHERE "comentarios"."articulo_id" = ?[0m  [["articulo_id", 5]]
+  ↳ app/views/articulos/show.html.erb:10
+  [1m[36mComentario Load (0.0ms)[0m  [1m[34mSELECT "comentarios".* FROM "comentarios" WHERE "comentarios"."articulo_id" = ?[0m  [["articulo_id", 5]]
+  ↳ app/views/articulos/show.html.erb:11
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 3)
+  Rendered comentarios/_form.html.erb (Duration: 3.3ms | Allocations: 4730)
+  Rendered articulos/show.html.erb within layouts/application (Duration: 6.9ms | Allocations: 8314)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 246)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.5ms | Allocations: 13045)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mArticulo Load (0.2ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mAutor Load (0.2ms)[0m  [1m[34mSELECT "autors".* FROM "autors" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/articulos/5" for ::1 at 2023-09-26 20:21:27 +0200
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mArticulo Load (0.1ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:39:in `show'
+  Rendering articulos/show.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comentarios" WHERE "comentarios"."articulo_id" = ?[0m  [["articulo_id", 5]]
+  ↳ app/views/articulos/show.html.erb:10
+  [1m[36mComentario Load (0.0ms)[0m  [1m[34mSELECT "comentarios".* FROM "comentarios" WHERE "comentarios"."articulo_id" = ?[0m  [["articulo_id", 5]]
+  ↳ app/views/articulos/show.html.erb:11
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 3)
+  Rendered comentarios/_form.html.erb (Duration: 2.9ms | Allocations: 4371)
+  Rendered articulos/show.html.erb within layouts/application (Duration: 6.4ms | Allocations: 7596)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 251)
+Completed 200 OK in 14ms (Views: 8.7ms | ActiveRecord: 0.8ms | Allocations: 16696)
+
+
+Started GET "/articulos//new" for ::1 at 2023-09-26 20:21:30 +0200
+Processing by ArticulosController#new as HTML
+  [1m[36mAutor Load (0.2ms)[0m  [1m[34mSELECT "autors".* FROM "autors" WHERE "autors"."id" = ? ORDER BY "autors"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/_form.html.erb (Duration: 0.6ms | Allocations: 729)
+  Rendered articulos/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 789)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 238)
+Completed 200 OK in 21ms (Views: 5.6ms | ActiveRecord: 0.8ms | Allocations: 12567)
+
+
+Started GET "/articulos/4/edit" for ::1 at 2023-09-26 20:21:35 +0200
+Processing by ArticulosController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mAutor Load (0.1ms)[0m  [1m[34mSELECT "autors".* FROM "autors" WHERE "autors"."id" = ? ORDER BY "autors"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mArticulo Load (0.1ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:25:in `edit'
+  Rendering articulos/edit.html.erb within layouts/application
+  Rendered articulos/_form.html.erb (Duration: 0.8ms | Allocations: 808)
+  Rendered articulos/edit.html.erb within layouts/application (Duration: 1.0ms | Allocations: 964)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 246)
+Completed 200 OK in 7ms (Views: 3.8ms | ActiveRecord: 0.2ms | Allocations: 7098)
+
+
+Started DELETE "/autors/sign_out" for ::1 at 2023-09-26 20:21:37 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"0LuJzOfW6gZJuxiTir9/1hWUK8XgCx9UepSLZZ7SrnHW3EGb1LrPU1TVcoNgS965THVSYfFBXqJLKm3J4GgjMA=="}
+  [1m[36mAutor Load (0.1ms)[0m  [1m[34mSELECT "autors".* FROM "autors" WHERE "autors"."id" = ? ORDER BY "autors"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 2ms (ActiveRecord: 0.1ms | Allocations: 2397)
+
+
+Started GET "/" for ::1 at 2023-09-26 20:21:37 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 260)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 4768)
+
+
+Started GET "/articulos" for ::1 at 2023-09-26 20:21:40 +0200
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (0.1ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY created_at DESC[0m
+  ↳ app/views/articulos/index.html.erb:3
+  Rendered articulos/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1200)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 246)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.1ms | Allocations: 5346)
+
+
+Started GET "/articulos/new" for ::1 at 2023-09-26 20:21:42 +0200
+Processing by ArticulosController#new as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 281)
+
+
+Started GET "/autors/sign_in" for ::1 at 2023-09-26 20:21:42 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 540)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 2137)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 248)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 7454)
+
+
+Started POST "/autors/sign_in" for ::1 at 2023-09-26 20:21:48 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"cyn8RQa4VL2zMZCPM4eTLy9b+4Nhx83du/bJbeRgLm4qt9mizEb8YGEQ0NC1+hCVmwbpvHesVCMfTWceavr5EQ==", "autor"=>{"email"=>"manu@manu.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAutor Load (0.2ms)[0m  [1m[34mSELECT "autors".* FROM "autors" WHERE "autors"."email" = ? ORDER BY "autors"."id" ASC LIMIT ?[0m  [["email", "manu@manu.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/articulos/new
+Completed 303 See Other in 165ms (ActiveRecord: 0.2ms | Allocations: 3827)
+
+
+Started GET "/articulos/new" for ::1 at 2023-09-26 20:21:48 +0200
+Processing by ArticulosController#new as HTML
+  [1m[36mAutor Load (0.0ms)[0m  [1m[34mSELECT "autors".* FROM "autors" WHERE "autors"."id" = ? ORDER BY "autors"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/_form.html.erb (Duration: 0.5ms | Allocations: 738)
+  Rendered articulos/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 798)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 246)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 6438)
+
+
+Started GET "/articulos" for ::1 at 2023-09-26 20:21:52 +0200
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (0.2ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY created_at DESC[0m
+  ↳ app/views/articulos/index.html.erb:3
+  Rendered articulos/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1049)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 239)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.2ms | Allocations: 5054)
+
+
+Started GET "/articulos/5" for ::1 at 2023-09-26 20:21:53 +0200
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mArticulo Load (0.1ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:39:in `show'
+  Rendering articulos/show.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comentarios" WHERE "comentarios"."articulo_id" = ?[0m  [["articulo_id", 5]]
+  ↳ app/views/articulos/show.html.erb:10
+  [1m[36mComentario Load (0.0ms)[0m  [1m[34mSELECT "comentarios".* FROM "comentarios" WHERE "comentarios"."articulo_id" = ?[0m  [["articulo_id", 5]]
+  ↳ app/views/articulos/show.html.erb:11
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 3)
+  Rendered comentarios/_form.html.erb (Duration: 0.7ms | Allocations: 950)
+  Rendered articulos/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2719)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 238)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.2ms | Allocations: 7238)
+
+
+Started GET "/articulos/5" for ::1 at 2023-09-26 20:22:31 +0200
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:39:in `show'
+  Rendering articulos/show.html.erb within layouts/application
+  [1m[36mAutor Load (0.1ms)[0m  [1m[34mSELECT "autors".* FROM "autors" WHERE "autors"."id" = ? ORDER BY "autors"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articulos/show.html.erb:7
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "comentarios" WHERE "comentarios"."articulo_id" = ?[0m  [["articulo_id", 5]]
+  ↳ app/views/articulos/show.html.erb:12
+  [1m[36mComentario Load (0.0ms)[0m  [1m[34mSELECT "comentarios".* FROM "comentarios" WHERE "comentarios"."articulo_id" = ?[0m  [["articulo_id", 5]]
+  ↳ app/views/articulos/show.html.erb:13
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 3)
+  Rendered comentarios/_form.html.erb (Duration: 2.9ms | Allocations: 4557)
+  Rendered articulos/show.html.erb within layouts/application (Duration: 9.8ms | Allocations: 13748)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 426)
+Completed 200 OK in 18ms (Views: 12.7ms | ActiveRecord: 0.9ms | Allocations: 24193)
+
+
+Started DELETE "/autors/sign_out" for ::1 at 2023-09-26 20:22:33 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/No1cFSGPMxeAvOMDVnRh+PCOHANOcjkm9yHEvxzJfIKo6ikx7ub7TqAUBKLLz7LjStdzygb7NyUD2OOZUjnxA=="}
+  [1m[36mAutor Load (0.1ms)[0m  [1m[34mSELECT "autors".* FROM "autors" WHERE "autors"."id" = ? ORDER BY "autors"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 3ms (ActiveRecord: 0.1ms | Allocations: 2390)
+
+
+Started GET "/" for ::1 at 2023-09-26 20:22:33 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 260)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 4782)
+
+
+Started GET "/articulos" for ::1 at 2023-09-26 20:22:39 +0200
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (0.1ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY created_at DESC[0m
+  ↳ app/views/articulos/index.html.erb:3
+  Rendered articulos/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1200)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 246)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.1ms | Allocations: 5345)
+
+
+Started GET "/articulos/5" for ::1 at 2023-09-26 20:22:40 +0200
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mArticulo Load (0.1ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:39:in `show'
+  Rendering articulos/show.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comentarios" WHERE "comentarios"."articulo_id" = ?[0m  [["articulo_id", 5]]
+  ↳ app/views/articulos/show.html.erb:12
+  [1m[36mComentario Load (0.0ms)[0m  [1m[34mSELECT "comentarios".* FROM "comentarios" WHERE "comentarios"."articulo_id" = ?[0m  [["articulo_id", 5]]
+  ↳ app/views/articulos/show.html.erb:13
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 3)
+  Rendered comentarios/_form.html.erb (Duration: 0.7ms | Allocations: 962)
+  Rendered articulos/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2688)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 238)
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.2ms | Allocations: 7209)
+
+
+Started GET "/autors/sign_in" for ::1 at 2023-09-26 20:22:42 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 540)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 2183)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 248)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 7492)
+
+
+Started GET "/autors/sign_up" for ::1 at 2023-09-26 20:24:36 +0200
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.2ms | Allocations: 187)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 100)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1989)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 253)
+Completed 200 OK in 9ms (Views: 4.5ms | ActiveRecord: 0.3ms | Allocations: 11761)
+
+
+Started POST "/autors" for ::1 at 2023-09-26 20:24:45 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"yKF6sXCJ1/EUga4PfkZW3NFuZTvyKvLnvDNzul2WUB9vl79IgD0Zux5imF19cBA7w1u3JGhDKB+ovKSNXcpD8A==", "autor"=>{"email"=>"manu2@manu.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAutor Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "autors" WHERE "autors"."email" = ? LIMIT ?[0m  [["email", "manu2@manu.com"], ["LIMIT", 1]]
+  [1m[36mAutor Create (0.1ms)[0m  [1m[32mINSERT INTO "autors" ("email", "created_at", "updated_at", "encrypted_password") VALUES (?, ?, ?, ?)[0m  [["email", "manu2@manu.com"], ["created_at", "2023-09-26 18:24:45.757167"], ["updated_at", "2023-09-26 18:24:45.757167"], ["encrypted_password", "$2a$12$cZXuuYRqptqIDv7AfEr8Q.BpZFivuc6ZlrsIJ8Yj/B26KVPCKZNmu"]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 303 See Other in 164ms (ActiveRecord: 3.1ms | Allocations: 10811)
+
+
+Started GET "/" for ::1 at 2023-09-26 20:24:45 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 260)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 4191)
+
+
+Started GET "/articulos" for ::1 at 2023-09-26 20:24:49 +0200
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (0.2ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY created_at DESC[0m
+  ↳ app/views/articulos/index.html.erb:3
+  Rendered articulos/index.html.erb within layouts/application (Duration: 11.3ms | Allocations: 4239)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 246)
+Completed 200 OK in 17ms (Views: 13.4ms | ActiveRecord: 0.9ms | Allocations: 9454)
+
+
+Started GET "/articulos/5" for ::1 at 2023-09-26 20:24:50 +0200
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mArticulo Load (0.2ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:40:in `show'
+  Rendering articulos/show.html.erb within layouts/application
+  [1m[36mAutor Load (0.1ms)[0m  [1m[34mSELECT "autors".* FROM "autors" WHERE "autors"."id" = ? ORDER BY "autors"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/articulos/show.html.erb:7
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "comentarios" WHERE "comentarios"."articulo_id" = ?[0m  [["articulo_id", 5]]
+  ↳ app/views/articulos/show.html.erb:12
+  [1m[36mComentario Load (0.0ms)[0m  [1m[34mSELECT "comentarios".* FROM "comentarios" WHERE "comentarios"."articulo_id" = ?[0m  [["articulo_id", 5]]
+  ↳ app/views/articulos/show.html.erb:13
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 3)
+  Rendered comentarios/_form.html.erb (Duration: 3.0ms | Allocations: 4369)
+  Rendered articulos/show.html.erb within layouts/application (Duration: 6.1ms | Allocations: 8531)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 238)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.5ms | Allocations: 13087)
+
+
+Started GET "/articulos/5/edit" for ::1 at 2023-09-26 20:24:52 +0200
+Processing by ArticulosController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAutor Load (0.1ms)[0m  [1m[34mSELECT "autors".* FROM "autors" WHERE "autors"."id" = ? ORDER BY "autors"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mArticulo Load (0.1ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" WHERE "articulos"."autor_id" = ? AND "articulos"."id" = ? LIMIT ?[0m  [["autor_id", 3], ["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:56:in `correct_autor'
+Redirected to http://localhost:3000/articulos
+Filter chain halted as :correct_autor rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 3076)
+
+
+Started GET "/articulos" for ::1 at 2023-09-26 20:24:52 +0200
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (0.1ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY created_at DESC[0m
+  ↳ app/views/articulos/index.html.erb:3
+  Rendered articulos/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1048)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 239)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.1ms | Allocations: 5109)
+
+
+Started DELETE "/autors/sign_out" for ::1 at 2023-09-26 20:24:58 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6vyJERVTX5eFai/XZcMgankTGdSj8rhtFeBXeL5CGBZOLyA0orrVaXX611pu5BZpe4V/SZ2NxhMEPCyqfapaIQ=="}
+  [1m[36mAutor Load (0.1ms)[0m  [1m[34mSELECT "autors".* FROM "autors" WHERE "autors"."id" = ? ORDER BY "autors"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 2ms (ActiveRecord: 0.1ms | Allocations: 2332)
+
+
+Started GET "/" for ::1 at 2023-09-26 20:24:58 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 248)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 4005)
+
+
+Started GET "/autors/sign_in" for ::1 at 2023-09-26 20:24:59 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 160)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1331)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 248)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 5730)
+
+
+Started POST "/autors/sign_in" for ::1 at 2023-09-26 20:25:04 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"tYb/sDr1azK1OJ+DfcB7TD3HUN5so+wXANUiXqd+Xu6ahlYv96fPiIae/X+bkwdzExxNnt+vosxzSkGUmszoYg==", "autor"=>{"email"=>"manu@manu.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAutor Load (0.1ms)[0m  [1m[34mSELECT "autors".* FROM "autors" WHERE "autors"."email" = ? ORDER BY "autors"."id" ASC LIMIT ?[0m  [["email", "manu@manu.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 149ms (ActiveRecord: 0.1ms | Allocations: 3133)
+
+
+Started GET "/" for ::1 at 2023-09-26 20:25:04 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 248)
+Completed 200 OK in 2ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 4019)
+
+
+Started GET "/articulos" for ::1 at 2023-09-26 20:25:07 +0200
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (0.1ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" ORDER BY created_at DESC[0m
+  ↳ app/views/articulos/index.html.erb:3
+  Rendered articulos/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1047)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 239)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.1ms | Allocations: 5071)
+
+
+Started GET "/articulos/5" for ::1 at 2023-09-26 20:25:09 +0200
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mArticulo Load (0.1ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:40:in `show'
+  Rendering articulos/show.html.erb within layouts/application
+  [1m[36mAutor Load (0.0ms)[0m  [1m[34mSELECT "autors".* FROM "autors" WHERE "autors"."id" = ? ORDER BY "autors"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articulos/show.html.erb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comentarios" WHERE "comentarios"."articulo_id" = ?[0m  [["articulo_id", 5]]
+  ↳ app/views/articulos/show.html.erb:12
+  [1m[36mComentario Load (0.0ms)[0m  [1m[34mSELECT "comentarios".* FROM "comentarios" WHERE "comentarios"."articulo_id" = ?[0m  [["articulo_id", 5]]
+  ↳ app/views/articulos/show.html.erb:13
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 3)
+  Rendered comentarios/_form.html.erb (Duration: 0.7ms | Allocations: 949)
+  Rendered articulos/show.html.erb within layouts/application (Duration: 4.9ms | Allocations: 3594)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 238)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.2ms | Allocations: 8146)
+
+
+Started GET "/articulos/5/edit" for ::1 at 2023-09-26 20:25:09 +0200
+Processing by ArticulosController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAutor Load (0.1ms)[0m  [1m[34mSELECT "autors".* FROM "autors" WHERE "autors"."id" = ? ORDER BY "autors"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" WHERE "articulos"."autor_id" = ? AND "articulos"."id" = ? LIMIT ?[0m  [["autor_id", 2], ["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:56:in `correct_autor'
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:26:in `edit'
+  Rendering articulos/edit.html.erb within layouts/application
+  Rendered articulos/_form.html.erb (Duration: 1.0ms | Allocations: 1086)
+  Rendered articulos/edit.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1372)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 246)
+Completed 200 OK in 7ms (Views: 3.5ms | ActiveRecord: 0.1ms | Allocations: 8795)
+
+
+Started DELETE "/autors/sign_out" for ::1 at 2023-09-26 20:26:12 +0200
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3DM6sFZb2zezzrEne5EP9CK53yGo1jpmOYT/Bl99ROaxYLD+63nfDS9c8zHlNetIreVXrxCbRJfOhBN7u26Ruw=="}
+  [1m[36mAutor Load (0.1ms)[0m  [1m[34mSELECT "autors".* FROM "autors" WHERE "autors"."id" = ? ORDER BY "autors"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 8ms (ActiveRecord: 0.3ms | Allocations: 9286)
+
+
+Started GET "/" for ::1 at 2023-09-26 20:26:13 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 266)
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 4200)
+
+
+Started GET "/autors/sign_up" for ::1 at 2023-09-26 20:26:15 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 98)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1350)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 248)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 5726)
+
+
+Started GET "/autors/sign_in" for ::1 at 2023-09-26 20:26:15 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 160)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1332)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 248)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 5711)
+
+
+Started POST "/autors/sign_in" for ::1 at 2023-09-26 20:26:21 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"+SHDNJVYchk6x9UI/HFqczHgLzs0rWZDTr+GGpf2DMuwEgMx1Aq9fy1v4RrAoch3I0b5bjsn3IBCVLqsBu5fGA==", "autor"=>{"email"=>"manu@manu.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAutor Load (0.1ms)[0m  [1m[34mSELECT "autors".* FROM "autors" WHERE "autors"."email" = ? ORDER BY "autors"."id" ASC LIMIT ?[0m  [["email", "manu@manu.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 154ms (ActiveRecord: 0.1ms | Allocations: 2787)
+
+
+Started GET "/" for ::1 at 2023-09-26 20:26:21 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 248)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 4012)
+
+

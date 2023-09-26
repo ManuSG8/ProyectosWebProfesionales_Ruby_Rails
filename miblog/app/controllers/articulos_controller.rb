@@ -1,15 +1,18 @@
 class ArticulosController < ApplicationController
+  before_action :authenticate_autor!, except: [:index, :show]
+  before_action :correct_autor, only: [:edit, :update, :destroy] # Metodo definido mas abajo
+
   def index
     @articulos = Articulo.all.order("created_at DESC")
   end
 
   def new
     @boton = "Crear"
-    @articulo = Articulo.new
+    @articulo = current_autor.articulos.build
   end
 
   def create
-    @articulo = Articulo.create(articulo_params)
+    @articulo = current_autor.articulos.build(articulo_params)
     if @articulo.save
       flash[:notice] = "Articulo creado correctamente"
       redirect_to @articulo
@@ -46,6 +49,11 @@ class ArticulosController < ApplicationController
   private
 
   def articulo_params
-    params.require(:articulo).permit(:titulo, :contenido, :autor_id)
+    params.require(:articulo).permit(:titulo, :contenido)
+  end
+
+  def correct_autor
+    @articulo = current_autor.articulos.find_by(id: params[:id])
+    redirect_to articulos_path, notice: "No estas autorizado a editar este articulo" if @articulo.nil?
   end
 end
