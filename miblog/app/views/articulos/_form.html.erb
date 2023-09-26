@@ -1,28 +1,28 @@
-<%= form_with model: @articulo, local: true do |f| %>
-    <% if @articulo.errors.any? %>
-        <div>
-            <h4>Se han producido errores</h4>
-            <ul>
-                <% @articulo.errors.full_messages.each do |msg| %>
-                    <li><%= msg %></li>
-                <% end %>
-            </ul>
-        </div>
-    <% end %>
+<div class="row">
+    <div class="col-md-6">
+        <%= form_with model: @articulo, local: true do |f| %>
+            <% if @articulo.errors.any? %>
+                <div>
+                    <h4>Se han producido errores</h4>
+                    <ul>
+                        <% @articulo.errors.full_messages.each do |msg| %>
+                            <li><%= msg %></li>
+                        <% end %>
+                    </ul>
+                </div>
+            <% end %>
 
-    <div>
-        <%= f.label :titulo %>
-        <%= f.text_field :titulo %>
+            <form>
+            <div class="mb-3">
+                <%= f.label :titulo, class:"form-label" %>
+                <%= f.text_field :titulo, class:"form-control" %>
+            </div>
+            <div class="mb-3">
+                <%= f.label :contenido, class:"form-label" %>
+                <%= f.text_field :contenido, class:"form-control" %>
+            </div>
+            <%= f.submit "#{@boton} Articulo", class:"btn btn-primary" %>
+            </form>
+        <% end %>
     </div>
-
-    <div>
-        <%= f.label :contenido %>
-        <%= f.text_area :contenido %>
-    </div>
-
-
-
-    <div>
-        <%= f.submit "#{@boton} Articulo" %>
-    </div>
-<% end %>
+</div>
