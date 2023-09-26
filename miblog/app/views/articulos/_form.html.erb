@@ -1,0 +1,31 @@
+<%= form_with model: @articulo, local: true do |f| %>
+    <% if @articulo.errors.any? %>
+        <div>
+            <h4>Se han producido errores</h4>
+            <ul>
+                <% @articulo.errors.full_messages.each do |msg| %>
+                    <li><%= msg %></li>
+                <% end %>
+            </ul>
+        </div>
+    <% end %>
+
+    <div>
+        <%= f.label :titulo %>
+        <%= f.text_field :titulo %>
+    </div>
+
+    <div>
+        <%= f.label :contenido %>
+        <%= f.text_area :contenido %>
+    </div>
+
+    <div>
+        <%= f.label :autor_id %>
+        <%= f.number_field :autor_id %>
+    </div>
+
+    <div>
+        <%= f.submit "#{@boton} Articulo" %>
+    </div>
+<% end %>
