@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :autors
+  
   resources :articulos do
     resources :comentarios
   end
