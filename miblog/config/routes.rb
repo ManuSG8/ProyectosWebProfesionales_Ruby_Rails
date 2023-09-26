@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :articulos
+  resources :articulos do
+    resources :comentarios
+  end
 
   get 'estaticas/contacto'
   get 'estaticas/nosotros'
